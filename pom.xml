@@ -10,7 +10,7 @@
 
   <groupId>com.josdugan</groupId>
   <artifactId>beer-works-dependencies</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.2-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>beer-works-dependencies</name>
 
@@ -20,6 +20,7 @@
     <maven.compiler.target>${java.version}</maven.compiler.target>
     <jaxb.version>2.3.0</jaxb.version>
     <mapstruct.version>1.4.2.Final</mapstruct.version>
+    <spring-statemachine-core.version>2.1.2.RELEASE</spring-statemachine-core.version>
   </properties>
 
   <dependencyManagement>
@@ -43,6 +44,11 @@
         <groupId>org.mapstruct</groupId>
         <artifactId>mapstruct</artifactId>
         <version>${mapstruct.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.statemachine</groupId>
+        <artifactId>spring-statemachine-core</artifactId>
+        <version>${spring-statemachine-core.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
