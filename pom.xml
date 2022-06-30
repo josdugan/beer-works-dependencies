@@ -4,13 +4,13 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.7.0</version>
+    <version>2.7.1</version>
     <relativePath />
   </parent>
 
   <groupId>com.josdugan</groupId>
   <artifactId>beer-works-dependencies</artifactId>
-  <version>0.0.3-SNAPSHOT</version>
+  <version>0.0.4-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>beer-works-dependencies</name>
 
@@ -21,6 +21,7 @@
     <jaxb.version>2.3.0</jaxb.version>
     <mapstruct.version>1.4.2.Final</mapstruct.version>
     <spring-statemachine-core.version>2.1.2.RELEASE</spring-statemachine-core.version>
+    <spring-cloud.version>2021.0.3</spring-cloud.version>
     <awaitility.version>4.2.0</awaitility.version>
     <wiremock-extension.version>0.4.0</wiremock-extension.version>
   </properties>
@@ -61,6 +62,13 @@
         <groupId>com.github.JensPiegsa</groupId>
         <artifactId>wiremock-extension</artifactId>
         <version>${wiremock-extension.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-dependencies</artifactId>
+        <version>${spring-cloud.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>
